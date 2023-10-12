@@ -12,16 +12,20 @@ return true;
  console.log(addItem(item));
 
 function listItems(basket) {
-    for (let i=0; i<basket.length; i++){
+    for (let i=0; i<basket.length; i++)
         console.log(basket[i]);
-    }
+    
+}
+console.log('items in the basket');
+listItems(basket);
+
+
+function empty(basket) {
+    basket.length = 0 ;  
 }
 
-
-
-
-
-
+empty(basket);
+console.log(basket);
 
 // DO NOT MODIFY
 // Used for automated testing
